@@ -6,16 +6,12 @@
 /*   By: sinkosi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 14:30:35 by sinkosi           #+#    #+#             */
-/*   Updated: 2019/06/28 14:30:50 by sinkosi          ###   ########.fr       */
+/*   Updated: 2019/07/02 15:18:08 by sinkosi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-/*int	get_next_line(const int fd, char **line)
-{
-	return (1);
-}*/
 int    get_next_line(const int fd, char **line)
 {
     static char    *c[2147483647];
@@ -44,4 +40,3 @@ int    get_next_line(const int fd, char **line)
     ft_strdel(&tmp);
     return (!(!c[fd] && !ft_strlen(*line)));
 }
-:
