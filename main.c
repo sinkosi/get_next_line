@@ -6,7 +6,7 @@
 /*   By: sinkosi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/03 11:27:33 by sinkosi           #+#    #+#             */
-/*   Updated: 2019/07/03 16:19:40 by sinkosi          ###   ########.fr       */
+/*   Updated: 2019/07/04 12:18:48 by sinkosi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	main(int argc, char **argv)
 		return (0);
 	i = 0;
 	fd = open(argv[1], O_RDONLY);
-	while(get_next_line(fd, &line) > 0)
+	while (get_next_line(fd, &line) > 0)
 	{
 		ft_putendl(line);
 		i++;
@@ -32,4 +32,3 @@ int	main(int argc, char **argv)
 	close(fd);
 	return (0);
 }
-	
