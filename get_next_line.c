@@ -84,7 +84,11 @@ int		ft_get_line(const int fd, char *buffer, char *stat_char[fd])
 **		the reading is complete the function returns its result without '\n'.
 **	cfdp - Control File Descriptor Process: This is an integer for keeping track
 **		of which file descriptor is currently being handled.
-**	buffer - This is a string created in the function of size BUFF_SIZE
+**	buffer - This is a string created in the function of size BUFF_SIZE, through
+**		the function 'ft_strnew' which uses malloc.
+**	str
+**	tmp
+**	pnt_to_fd
 */
 
 int		get_next_line(const int fd, char **line)
