@@ -6,7 +6,7 @@
 /*   By: sinkosi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 14:30:35 by sinkosi           #+#    #+#             */
-/*   Updated: 2019/07/04 16:37:07 by sinkosi          ###   ########.fr       */
+/*   Updated: 2019/07/05 15:06:53 by sinkosi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,9 +86,21 @@ int		ft_get_line(const int fd, char *buffer, char *stat_char[fd])
 **		of which file descriptor is currently being handled.
 **	buffer - This is a string created in the function of size BUFF_SIZE, through
 **		the function 'ft_strnew' which uses malloc.
-**	str
-**	tmp
-**	pnt_to_fd
+**	str - This variable is called in an if statement. Its purpose is to take the
+**		remainder of the string that 'ft_strchr' will return after finding the
+**		'\n' character in string 'pnt_to_fd[fd]'.
+**	tmp - This variable is called in an if statement after the 'str' variable.
+**		Its purpose is to take the first part of the string pointed to by
+**		'pnt_to_fd' after it has been separated by the '\n' character using the
+**		'ft_strchr' function.
+**	pnt_to_fd - This static char is used to keep track of where there the 'file
+**		descriptor' is currently pointing. It moves as per the 'BUFF_SIZE' until
+**		it reaches the 'EndOfFile', defined as the '0' point.
+**	This function uses a ternary operator to control its final return. This is
+**		due to norminette 25 line limit only. It used to be:
+**		if (ft_strlen(*line) > 0)
+**			return (1);
+**		return (0);
 */
 
 int		get_next_line(const int fd, char **line)
@@ -116,7 +128,5 @@ int		get_next_line(const int fd, char **line)
 	}
 	*line = ft_strdup(pnt_to_fd[fd]);
 	ft_strdel(&pnt_to_fd[fd]);
-	if (ft_strlen(*line) > 0)
-		return (1);
-	return (0);
+	return (ft_strlen(*line) > 0 ? 1 : 0);
 }
