@@ -6,7 +6,7 @@
 /*   By: sinkosi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 14:30:35 by sinkosi           #+#    #+#             */
-/*   Updated: 2019/07/09 10:52:56 by sinkosi          ###   ########.fr       */
+/*   Updated: 2019/07/17 10:15:21 by sinkosi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@
 **		error.
 */
 
-int		ft_read(char *buffer)
+static int		ft_read(char *buffer)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (buffer[i] != '\0' && buffer[i] != '\n')
@@ -58,7 +58,7 @@ int		ft_read(char *buffer)
 **		GET_NEXT_LINE (1) / CLOSE (-1) / ERROR (-1)
 */
 
-int		ft_get_line(const int fd, char *buffer, char *stat_char[fd])
+static int		ft_get_line(const int fd, char *buffer, char *stat_char[fd])
 {
 	int		cfdp;
 	char	*tmp;
@@ -103,7 +103,7 @@ int		ft_get_line(const int fd, char *buffer, char *stat_char[fd])
 **		return (0);
 */
 
-int		get_next_line(const int fd, char **line)
+int				get_next_line(const int fd, char **line)
 {
 	int				cfdp;
 	char			*buffer;
