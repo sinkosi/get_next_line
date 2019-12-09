@@ -4,7 +4,7 @@ This project must also manage how to handle FILE DESCRIPTORS (FD)
 
 # PROJECT PURPOSE
 You are now starting to understand that it will get tricky to read data from a file descriptor if you don’t know its size beforehand. What size should your buffer be? How
-many times do you need to read the file descriptor to retrieve the data ?
+many times do you need to read the file descriptor to retrieve the data?
 
 It is perfectly normal and natural that, as a programmer, you would want to read a
 “line” that ends with a line break from a file descriptor. For example each command that
@@ -37,3 +37,10 @@ the size of either the text or one of its lines.
 from a binary file. However, if you wish, you can make this behavior coherent.
 • Global variables are forbidden.
 • Static variables are allowed.
+
+# HOW TO USE
+After cloning run "gcc -Werror -Wextra -Wall main.c getnextline.c ./libft/includes/libft.h"
+
+Then call "a.out".
+
+You are free to create your own main.c file.
