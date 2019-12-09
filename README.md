@@ -44,3 +44,5 @@ After cloning run "gcc -Werror -Wextra -Wall main.c getnextline.c ./libft/includ
 Then call "a.out".
 
 You are free to create your own main.c file.
+
+# FINAL MARK - 123/100
