@@ -6,7 +6,7 @@
 /*   By: sinkosi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 14:30:35 by sinkosi           #+#    #+#             */
-/*   Updated: 2019/07/17 10:15:21 by sinkosi          ###   ########.fr       */
+/*   Updated: 2019/07/23 10:01:05 by sinkosi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,7 +109,7 @@ int				get_next_line(const int fd, char **line)
 	char			*buffer;
 	char			*str;
 	char			*tmp;
-	static char		*pnt_to_fd[2147483647];
+	static char		*pnt_to_fd[1024];
 
 	if (fd < 0 || !line || BUFF_SIZE < 1)
 		return (-1);
