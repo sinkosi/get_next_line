@@ -7,7 +7,7 @@ This project must also manage how to handle FILE DESCRIPTORS (FD)
 - [Instructions](#instructions)
 - [Mandatory part](#mandatory-part)
 - [How To Use](#how-to-use)
-- [FINAL MARK - 123/100](#final-mark---123100)
+- [FINAL MARK - 123/100 👍](#final-mark---123100-)
 
 ## Project Purpose
 
@@ -55,4 +55,4 @@ Then call "a.out".
 
 You are free to create your own main.c file.
 
-## FINAL MARK - 123/100
+## FINAL MARK - 123/100 👍
