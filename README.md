@@ -5,9 +5,9 @@ This project must also manage how to handle FILE DESCRIPTORS (FD)
 
 - [Project Purpose](#project-purpose)
 - [Instructions](#instructions)
-- [Mandatory part](#mandatory-part)
+- [Mandatory Part](#mandatory-part)
 - [How To Use](#how-to-use)
-- [FINAL MARK - 123/100 👍](#final-mark---123100-)
+- [Final Mark - 123/100 👍](#final-mark---123100-)
 
 ## Project Purpose
 
@@ -27,7 +27,7 @@ use it in all the future projects that will require it.
 
 - The libc functions allowed on this project are read, malloc and free.
 
-## Mandatory part
+## Mandatory Part
 
 - Write a function that returns a line read from a file descriptor.
 - What we call a “line” is a succession of characters that end with ’\n’ (ascii code0x0a) or with End Of File (EOF).
@@ -55,4 +55,4 @@ Then call "a.out".
 
 You are free to create your own main.c file.
 
-## FINAL MARK - 123/100 👍
+## Final Mark - 123/100 👍
