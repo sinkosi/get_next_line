@@ -22,7 +22,9 @@ int	main(int argc, char **argv)
 	if (argc < 1)
 		return (0);
 	i = 0;
-	fd = open(argv[1], O_RDONLY);
+	//fd = open(argv[1], O_RDONLY);
+    ft_putendl(argv[0]);
+    fd = 0;
 	while (get_next_line(fd, &line) > 0)
 	{
 		ft_putendl(line);
